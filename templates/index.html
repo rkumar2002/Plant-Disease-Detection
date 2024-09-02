@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vision Flora</title>
+
+   <style>
+        *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins',sans-serif;
+}
+
+.hero{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(to bottom, #53b664, #ffcccc); 
+    position: relative;
+    padding: 0 5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow-y: hidden;
+}
+
+
+nav{
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 20px 8%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav .logo{
+    width: 80 px;
+}
+
+nav ul li{
+    list-style: none;
+    display: inline-block;
+    margin-left: 40px;
+
+}
+.videoo{
+    border: 4px solid #4682b4;
+    margin-top: 4rem;
+    margin-left: 28%;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 17px;
+}
+
+.content{
+    text-align: center;
+}
+.content h1{
+    font-size: 100px;
+    color: #147c4a;
+    font-weight: 600;
+    transition: 0.5s;
+
+}
+
+.rah{
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+
+.content h1:hover{
+    -webkit-text-stroke: 2px #40b652;
+    color: transparent;
+    cursor: pointer;
+}
+
+.content a{
+    text-decoration: none;
+    display: inline-block;
+    color: #fff;
+    font-size: 24px;
+    border: 2px solid #fff;
+    padding: 14px 70px;
+    border-radius: 50px;
+    margin-top: 20px;
+}
+
+.back-video{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+
+}
+
+@media(min-aspect-ratio:16/9){
+    .back-video{
+        width: 100%;
+        height: auto;
+    }
+}
+@media(max-aspect-ratio:16/9){
+    .back-video{
+        width: auto;
+        height: 100%;
+    }
+}
+
+.btn-pink {
+    background-color: #3b7409;
+    width: fit-content;
+    color: white;
+    padding: 0.8rem 2.3rem;
+    box-shadow: 5px 5px 7px 0px #0000003f;
+    font-size: 18px;
+    cursor: pointer;
+    transition: all 0.5s;
+    font-weight: 500;
+    position: relative;
+    z-index: 1;
+    border-radius: 50px;    
+}
+
+.btn-pink::before {
+    content: "";
+    position: absolute;
+    background-color: #7df556;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    transform: scaleX(0);
+    transform-origin: center;
+    transition:all 0.8s;
+    border-radius: 50px;
+    
+}
+
+.btn-pink:hover::before {
+    transform: scaleX(1);     
+}
+
+
+.btn-pink:hover {
+    color: #fff;
+}
+
+
+.wrap {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 3rem;
+  }
+  
+  .button {
+    width: 140px;
+    height: 45px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 2.5px;
+    font-weight: 500;
+    color: #000;
+    background-color: #fff;
+    border: none;
+    border-radius: 45px;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+    outline: none;
+    }
+  
+  .button:hover {
+    background-color: #2EE59D;
+    box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
+    color: #fff;
+    transform: translateY(-7px);
+  }
+
+  #openPageButton {
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    margin-left: 20px; 
+
+    background-color:#c2fbd7;
+  border-radius: 100px;
+  box-shadow: rgba(44, 187, 99, .2) 0 -25px 18px -14px inset,rgba(44, 187, 99, .15) 0 1px 2px,rgba(44, 187, 99, .15) 0 2px 4px,rgba(44, 187, 99, .15) 0 4px 8px,rgba(44, 187, 99, .15) 0 8px 16px,rgba(44, 187, 99, .15) 0 16px 32px;
+  color: green;
+  cursor: pointer;
+  display: inline-block;
+  font-family: CerebriSans-Regular,-apple-system,system-ui,Roboto,sans-serif;
+  padding: 7px 20px;
+  text-align: center;
+  text-decoration: none;
+  transition: all 250ms;
+  border: 0;
+  font-size: 16px;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+
+#openPageButton:hover {
+    box-shadow: rgba(44,187,99,.35) 0 -25px 18px -14px inset,rgba(44,187,99,.25) 0 1px 2px,rgba(44,187,99,.25) 0 2px 4px,rgba(44,187,99,.25) 0 4px 8px,rgba(44,187,99,.25) 0 8px 16px,rgba(44,187,99,.25) 0 16px 32px;
+  transform: scale(1.05) rotate(-1deg);
+}
+
+
+.hs-heading {
+    font-size: 35px;
+    font-weight: 500;
+    color: #ffffff;
+    font-family: 'Be Vietnam Pro', sans-serif;
+    /* color: #2eccac; */
+}
+
+.hs-subheading {
+    font-size: 45px;
+    line-height: 45px;
+}
+
+.hs-heading {
+    font-size: 35px;
+    font-weight: 500;
+    color: #ffffff;
+}
+
+.role {
+    color: #095557;
+    font:bolder;
+}
+.anis{
+    color: #451e9f;
+    margin-left: 20rem;
+    position: absolute;
+    bottom: 2rem;
+}
+
+.backgg{
+    height: 100vh;
+    background-color: rgba(181, 179, 193,0.3);
+    /* background-image: linear-gradient(rgba(181, 179, 193,0.3),rgba(175, 170, 188, 0.3)); */
+    background-image: linear-gradient(to bottom, #ffcccc, #53b664);
+    position: relative;
+}
+        </style>
+
+
+</head>
+<body>
+    <div class="hero">
+
+        <div class="content">
+            <h1>VISION FLORA</h1>
+            <div class="wrap">
+             <button class="button">Explore</button>
+            </div>
+           
+        </div>
+        
+    </div>
+    <div class="backgg">
+    <img class="videoo" align = 'center' src="{{ url_for('video_feed') }}" width="640" height="480" />
+
+     
+    <div class="hs-heading hs-subheading anis"><b>Your Trusted Partner in</b> 
+        <b><span class="role"></span></b>
+    </div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script src="https://kit.fontawesome.com/58a810656e.js" crossorigin="anonymous"></script>
+    <script class="move">
+        var typeData = new Typed(".role", {
+            strings: [
+                "Advanced Farming Solutions!",
+                "Sustainable Agriculture!",
+                "Precision Crop Management!",
+                "Agricultural Innovation!",
+            ],
+            loop: true,
+            typeSpeed: 100,
+            backSpeed: 80,
+            backDelay: 1000,
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OpenCV with the Flask</title>
+</head>
+
+<style>
+    
+    .content{
+        text-align: center;
+        
+    
+    
+    position: relative;
+    padding: 0 5%;
+    
+    align-items: center;
+    justify-content: center;
+    }
+
+    .content h1{
+        font-size: 100px;
+        color: #15aa49;
+        font-weight: 600;
+        transition: 0.5s;
+    }
+    .content h1:hover{
+        -webkit-text-stroke: 2px #a3ed92;
+        color: transparent;
+        cursor:pointer;
+    }
+
+    .wrap{
+        height:100px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-top: 3rem;
+    }
+
+    .button{
+        width: 140px;
+        height: 45px;
+        font-family:'Roboto',sans-serif;
+        font-size: 11px;
+        text-transform: uppercase;
+        letter-spacing: 2.5px;
+        font-weight: 500;
+        color: #000;
+        background-color: #fff;
+        border: none;
+        border-radius: 45px;
+        box-shadow: 0px 8px 15px rgba(0,0,0,0.1);
+        transition: all 0.3s ease 0s;
+        cursor: pointer;
+        outline: none;
+    }
+
+    .button:hover{
+        background-color: #2ee59d;
+        box-shadow: 0px 15px 20px rgba(46,229,157,0,4);
+        color: #fff;
+        transform: translate(-7px);
+    }
+</style>
+<body>
+     <div class="hero">
+
+    <div class="content">
+        <h1>Plant Disease Diagnosis</h1>
+        <div class="wrap">
+         <button class="button">Explore</button>
+        </div>
+
+    </div>
+</div>
+    <img align = 'center' src="{{ url_for('video_feed') }}" width="640" height="480" />
+</body>
+</html>
+
+
+div class="about-us">
+        <h2>About Us</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+
+        <div class="team-member">
+            <div class="member-card">
+
+                <h3>Privanshu</h3>
+                <p>Web Developer</p>
+            </div>
+
+            <div class="member-card">
+
+                <h3>Kabir</h3>
+                <p>Graphic Designer</p>
+            </div>
+
+            <div class="member-card">
+
+                <h3>Harshit</h3>
+                <p>UX/UI Designer</p>
+            </div>
+        </div>
+    </div>
